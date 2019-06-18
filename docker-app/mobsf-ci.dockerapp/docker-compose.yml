@@ -9,7 +9,7 @@ services:
      - 8000:8000
   
   scan:
-    image: ${mobsf_scanner_image}
+    image: omerl/mobsf-ci:latest
     environment:
       - MOBSF_URL=http://mobsf:8000/
       - TARGET_PATH=/app/target/${target_apk}
